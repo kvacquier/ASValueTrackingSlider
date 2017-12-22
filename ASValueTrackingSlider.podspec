@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "ASValueTrackingSlider"
-  s.version          = "0.12.1"
+  s.version          = "0.12.2"
   s.summary          = "A UISlider subclass that displays the slider value in an animated popUpView"
   s.description      = <<-DESC
                        Displays continuously updated values in an animated popUpView 

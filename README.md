@@ -1,7 +1,7 @@
 ASValueTrackingSlider
 ========
 
-###What is it?
+## What is it?
 
 
 A UISlider subclass that displays live values in an easy to customize popup view.
@@ -10,8 +10,8 @@ A UISlider subclass that displays live values in an easy to customize popup view
 
 If you'd like the same functionality for UIProgressView then check out [ASProgressPopupView](https://github.com/alskipp/ASProgressPopupView).
 
-Features
----
+## Features
+
 
 * Live updating of UISlider value
 * Customizable properties:
@@ -21,22 +21,23 @@ Features
   * popUpViewAnimatedColors - popUpView and UISlider track color animate as value changes
   * popUpViewCornerRadius
   * popUpViewArrowLength
-  
+
 * Set your own NSNumberFormatter to control the displayed values
 * Optional dataSource - supply your own custom text to the popUpView label
 * Wholesome springy animation
 
 
-Which files are needed?
----
+## Installation
 
-For [CocoaPods](http://beta.cocoapods.org) users, simply add `pod 'ASValueTrackingSlider'` to your podfile. If you'd like to test the included demo project before including it in your own work, then type `$ pod try ASValueTrackingSlider` in the terminal. CocoaPods will download the demo project into a temp folder and open it in Xcode. Magic.
+### CocoaPods
+simplly add the below line to your podfile:
+```
+pod 'ASValueTrackingSlider', :git => 'https://github.com/calvingit/ASValueTrackingSlider.git'
+```
 
-If you don't use CocoaPods, just include these files in your project:
-
-* ASValueTrackingSlider (.h .m)
-* ASValuePopUpView (.h .m)
-
+### Carthage
+simplly add the below line to your Cartfile:
+`github "calvingit/ASValueTrackingSlider" "master"`
 
 How to use it
 ---
@@ -69,10 +70,10 @@ self.slider.font = [UIFont fontWithName:@"Futura-CondensedExtraBold" size:26];
 The popUpView adjusts itself so that it doesn't extend beyond the width of the slider control.
 
 
-###How to use custom strings in popUpView label
+### How to use custom strings in popUpView label
 
 Set your controller as the `dataSource` to `ASValueTrackingSlider` and adopt the `ASValueTrackingSliderDataSource`, then return NSStrings for any values you want to customize.
-  
+
 ```objective-c
 // slider has a custom NSNumberFormatter to display temperature in °C
 // the dataSource method below returns custom NSStrings for specific values
@@ -94,7 +95,7 @@ Set your controller as the `dataSource` to `ASValueTrackingSlider` and adopt the
 ![screenshot] (http://alskipp.github.io/ASValueTrackingSlider/img/screenshot4.png)
 
 
-###How to use with UITableView
+### How to use with UITableView
 
 To use  effectively inside a UITableView you need to implement the `<ASValueTrackingSliderDelegate>` protocol. If you just embed an ASValueTrackingSlider inside a UITableViewCell the popUpView will probably be obscured by the cell above. The delegate method notifies you before the popUpView appears so that you can ensure that your UITableViewCell is rendered above the others.
 
@@ -118,4 +119,4 @@ The recommended technique for use with UITableView is to create a UITableViewCel
  }
  @end
 ```
- 
+

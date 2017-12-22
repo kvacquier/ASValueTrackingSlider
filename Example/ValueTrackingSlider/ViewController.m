@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "ASValueTrackingSlider.h"
+@import ASValueTrackingSlider;
 
 @interface ViewController () <ASValueTrackingSliderDataSource>
 @property (weak, nonatomic) IBOutlet ASValueTrackingSlider *slider1;
