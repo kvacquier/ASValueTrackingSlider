@@ -6,7 +6,7 @@ ASValueTrackingSlider
 
 A UISlider subclass that displays live values in an easy to customize popup view.
 
-![screenshot] (http://alskipp.github.io/ASValueTrackingSlider/img/screenshot1.gif)
+![screenshot1](http://alskipp.github.io/ASValueTrackingSlider/img/screenshot1.gif)
 
 If you'd like the same functionality for UIProgressView then check out [ASProgressPopupView](https://github.com/alskipp/ASProgressPopupView).
 
@@ -65,7 +65,7 @@ self.slider.popUpViewAnimatedColors = @[[UIColor purpleColor], [UIColor redColor
 self.slider.font = [UIFont fontWithName:@"Futura-CondensedExtraBold" size:26];
 ```
 
-![screenshot] (http://alskipp.github.io/ASValueTrackingSlider/img/screenshot3.png)
+![screenshot](http://alskipp.github.io/ASValueTrackingSlider/img/screenshot3.png)
 
 The popUpView adjusts itself so that it doesn't extend beyond the width of the slider control.
 
